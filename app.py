@@ -88,14 +88,14 @@ sintomas_seleccionados = st.multiselect(
 )
 
 # Verify minimum quantity
-if len(sintomas_seleccionados) < 3:
-    st.warning("⚠️ Debes seleccionar al menos **3 síntomas** para continuar.")
-else:
-    st.success(f"✅ Has seleccionado {len(sintomas_seleccionados)} síntomas.")
-    st.write("Síntomas seleccionados:", sintomas_seleccionados)
+#if len(sintomas_seleccionados) < 3:
+#    st.warning("⚠️ Debes seleccionar al menos **3 síntomas** para continuar.")
+#else:
+st.success(f"✅ Has seleccionado {len(sintomas_seleccionados)} síntomas.")
+st.write("Síntomas seleccionados:", sintomas_seleccionados)
 
     # Prediction button
-    if st.button("Predecir Enfermedad"):
+if st.button("Predecir Enfermedad"):
         # Create a dictionary for the input features
         # Initialize all symptoms to 0
         # Load the original dataframe to get the correct columns
